@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\net">
+      <UniqueIdentifier>{fd7d6074-c686-43cf-928a-3e343aeae4a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net">
+      <UniqueIdentifier>{df92f7e6-3c02-43f9-8380-ffc2ddbf2eb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\interop">
+      <UniqueIdentifier>{383c0c5b-dacd-47ab-970c-c7c0edef78a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interop">
+      <UniqueIdentifier>{89c7e976-19c7-48d7-abef-b34823f850e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\routines">
+      <UniqueIdentifier>{287bdcc9-2ed5-4534-b64d-e3545e9d2dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{f05f5ef7-82b5-43ca-9ab9-d5a45fbb4852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{f2fa4b98-3388-48b2-ab29-d6a6f30bde4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\routines">
+      <UniqueIdentifier>{d7c1dbec-e48a-4411-b70a-10e515c2b04e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="net_connection.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc_connection.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="base_connection.h">
+      <Filter>Header Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="export_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="signal.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="virtualcontainer_exp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="manmap.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="precompiled_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="routine_login.h">
+      <Filter>Header Files\routines</Filter>
+    </ClInclude>
+    <ClInclude Include="routine_pingloop.h">
+      <Filter>Header Files\routines</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ipc_connection.cpp">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="net_connection.cpp">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="signal.cpp">
+      <Filter>Source Files\interop</Filter>
+    </ClCompile>
+    <ClCompile Include="virtualcontainer_exp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="routine_login.cpp">
+      <Filter>Source Files\routines</Filter>
+    </ClCompile>
+    <ClCompile Include="routine_download.cpp">
+      <Filter>Source Files\routines</Filter>
+    </ClCompile>
+    <ClCompile Include="base_connection.cpp">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="routine_update.cpp">
+      <Filter>Source Files\routines</Filter>
+    </ClCompile>
+    <ClCompile Include="routine_map.cpp">
+      <Filter>Source Files\routines</Filter>
+    </ClCompile>
+    <ClCompile Include="manmap.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="routine_initialize.cpp">
+      <Filter>Source Files\routines</Filter>
+    </ClCompile>
+    <ClCompile Include="precompiled_header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="routine_pingloop.cpp">
+      <Filter>Source Files\routines</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

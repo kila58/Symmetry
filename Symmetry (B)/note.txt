@@ -1,0 +1,6 @@
+I gave up being SDK-indepandent when it came to implementing the huge C_BaseEntity class.
+
+It wouldn't have been too bad if it didn't have hundreds of references to functions, classes and structures
+from other files in the SDK.
+
+Perhaps sometime in the future I may go indepandant again, but until then Symmetry will use the SDK.

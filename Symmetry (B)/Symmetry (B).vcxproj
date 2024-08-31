@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Beta|Win32">
+      <Configuration>Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>
+      </Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public|Win32">
+      <Configuration>Public</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{06C03C03-CEED-470B-B80F-88B41EF1B6EA}</ProjectGuid>
+    <RootNamespace>SymmetryB</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="BeaEngine.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Lua51.props" />
+    <Import Project="SDK.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Lua51.props" />
+    <Import Project="SDK.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <OutDir>$(SolutionDir)\$(ProjectName)\bin\beta\</OutDir>
+    <TargetName>symmetry</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">
+    <OutDir>$(SolutionDir)\$(ProjectName)\bin\public\</OutDir>
+    <TargetName>symmetry</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>msvcrtd.lib;libcmtd.lib;msvcprtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_PUBLIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_PUBLIC;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_PUBLIC;WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TSEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_PUBLIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</WholeProgramOptimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_WINDLDL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILDMODE_BETA;_CRT_SECURE_NO_WARNINGS;CLIENT_DLL;GAME_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Symmetry %28LIB%29;$(SolutionDir)\3rdparty\MinHook\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>precompiled_header.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>symmetry.lib;libMinHook.x86.lib;oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdparty\MinHook\build\VC12\lib\Release;$(SolutionDir)\Symmetry %28LIB%29\bin\beta;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>DllEntryPoint</EntryPointSymbol>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_PUBLIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_PUBLIC;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_PUBLIC;WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TSEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_PUBLIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</WholeProgramOptimization>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_WINDLDL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">BUILDMODE_TEST;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILDMODE_PUBLIC;_CRT_SECURE_NO_WARNINGS;CLIENT_DLL;GAME_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Symmetry %28LIB%29;$(SolutionDir)\3rdparty\MinHook\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled_header.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>precompiled_header.h</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>symmetry.lib;libMinHook.x86.lib;oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdparty\MinHook\build\VC12\lib\Release;$(SolutionDir)\Symmetry %28LIB%29\bin\public;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>DllEntryPoint</EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="basepanel.cpp" />
+    <ClCompile Include="cbaseentity_h.cpp" />
+    <ClCompile Include="communications.cpp" />
+    <ClCompile Include="console.cpp" />
+    <ClCompile Include="console_manager.cpp" />
+    <ClCompile Include="cvarutil.cpp" />
+    <ClCompile Include="developer_c.cpp" />
+    <ClCompile Include="engine_vgui_h.cpp" />
+    <ClCompile Include="entry.cpp" />
+    <ClCompile Include="exploit_c.cpp" />
+    <ClCompile Include="frame.cpp" />
+    <ClCompile Include="generic_c.cpp" />
+    <ClCompile Include="iluagamemode_h.cpp" />
+    <ClCompile Include="ipanel_h.cpp" />
+    <ClCompile Include="lua.cpp" />
+    <ClCompile Include="lua_c.cpp" />
+    <ClCompile Include="lua_h.cpp" />
+    <ClCompile Include="lua_hook_manager.cpp" />
+    <ClCompile Include="lua_interface_manager.cpp" />
+    <ClCompile Include="iluashared_h.cpp" />
+    <ClCompile Include="lua_library.cpp" />
+    <ClCompile Include="lua_manager.cpp" />
+    <ClCompile Include="matsystem_h.cpp" />
+    <ClCompile Include="modelrender_h.cpp" />
+    <ClCompile Include="mouseutil.cpp" />
+    <ClCompile Include="netvarutil.cpp" />
+    <ClCompile Include="panel.cpp" />
+    <ClCompile Include="patterns.cpp" />
+    <ClCompile Include="patterns_c.cpp" />
+    <ClCompile Include="precompiled_header.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="renderutil.cpp" />
+    <ClCompile Include="src_c.cpp" />
+    <ClCompile Include="src_lib.cpp" />
+    <ClCompile Include="src_proxies.cpp" />
+    <ClCompile Include="symaimbot.cpp" />
+    <ClCompile Include="symcmd.cpp" />
+    <ClCompile Include="symmetry.cpp" />
+    <ClCompile Include="symvisuals.cpp" />
+    <ClCompile Include="testframe.cpp" />
+    <ClCompile Include="testhooks_h.cpp" />
+    <ClCompile Include="titlebar.cpp" />
+    <ClCompile Include="usercommand_h.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basepanel.h" />
+    <ClInclude Include="cbasentity_h.h" />
+    <ClInclude Include="command_args.h" />
+    <ClInclude Include="communications.h" />
+    <ClInclude Include="concommand.h" />
+    <ClInclude Include="console.h" />
+    <ClInclude Include="console_entry.h" />
+    <ClInclude Include="console_manager.h" />
+    <ClInclude Include="cvarutil.h" />
+    <ClInclude Include="engine_vgui_h.h" />
+    <ClInclude Include="frame.h" />
+    <ClInclude Include="ipanel_h.h" />
+    <ClInclude Include="lua_h.h" />
+    <ClInclude Include="matsystem_h.h" />
+    <ClInclude Include="modelrender_h.h" />
+    <ClInclude Include="mouseutil.h" />
+    <ClInclude Include="netvarutil.h" />
+    <ClInclude Include="panel.h" />
+    <ClInclude Include="precompiled_header.h" />
+    <ClInclude Include="renderutil.h" />
+    <ClInclude Include="src_entity.h" />
+    <ClInclude Include="src_luashared.h" />
+    <ClInclude Include="src_proxies.h" />
+    <ClInclude Include="src_random.h" />
+    <ClInclude Include="src_surface.h" />
+    <ClInclude Include="src_vars.h" />
+    <ClInclude Include="symaimbot.h" />
+    <ClInclude Include="symcmd.h" />
+    <ClInclude Include="symconvar.h" />
+    <ClInclude Include="filea.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="iluagamemode_h.h" />
+    <ClInclude Include="lua_gmod.h" />
+    <ClInclude Include="lua_hook_manager.h" />
+    <ClInclude Include="lua_interface_manager.h" />
+    <ClInclude Include="iluashared_h.h" />
+    <ClInclude Include="lua_library.h" />
+    <ClInclude Include="lua_manager.h" />
+    <ClInclude Include="patterns.h" />
+    <ClInclude Include="src_generic.h" />
+    <ClInclude Include="src_interface.h" />
+    <ClInclude Include="src_lib.h" />
+    <ClInclude Include="src_lua.h" />
+    <ClInclude Include="symmetry.h" />
+    <ClInclude Include="symvisuals.h" />
+    <ClInclude Include="testframe.h" />
+    <ClInclude Include="testhooks_h.h" />
+    <ClInclude Include="titlebar.h" />
+    <ClInclude Include="usercommand_h.h" />
+    <ClInclude Include="winutil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

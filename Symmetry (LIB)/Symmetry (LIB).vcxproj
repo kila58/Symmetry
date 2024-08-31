@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Beta|Win32">
+      <Configuration>Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Public|Win32">
+      <Configuration>Public</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes.h" />
+    <ClInclude Include="aescpp.h" />
+    <ClInclude Include="aesopt.h" />
+    <ClInclude Include="aestab.h" />
+    <ClInclude Include="aes_ni.h" />
+    <ClInclude Include="aes_via_ace.h" />
+    <ClInclude Include="apipe_client.h" />
+    <ClInclude Include="apipe_server.h" />
+    <ClInclude Include="client.h" />
+    <ClInclude Include="detours.h" />
+    <ClInclude Include="error.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="function.h" />
+    <ClInclude Include="generic.h" />
+    <ClInclude Include="html_colours.h" />
+    <ClInclude Include="lib_precompiled_header.h" />
+    <ClInclude Include="linkedlist.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="mem.h" />
+    <ClInclude Include="minmax.h" />
+    <ClInclude Include="namespaces.h" />
+    <ClInclude Include="net.h" />
+    <ClInclude Include="netmsg_base.h" />
+    <ClInclude Include="netmsg_ipc_addcommand.h" />
+    <ClInclude Include="netmsg_ipc_clear.h" />
+    <ClInclude Include="netmsg_ipc_conin.h" />
+    <ClInclude Include="netmsg_ipc_exit.h" />
+    <ClInclude Include="netmsg_ipc_print.h" />
+    <ClInclude Include="netmsg_ipc_remcommand.h" />
+    <ClInclude Include="netmsg_ping.h" />
+    <ClInclude Include="pipe_client.h" />
+    <ClInclude Include="pipe_server.h" />
+    <ClInclude Include="server.h" />
+    <ClInclude Include="sha256.h" />
+    <ClInclude Include="stream.h" />
+    <ClInclude Include="template_types.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="virtualcontainer.h" />
+    <ClInclude Include="vmt.h" />
+    <ClInclude Include="windows_headers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aescrypt.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">NotUsing</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="aeskey.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">NotUsing</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="aestab.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">NotUsing</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="aes_modes.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">NotUsing</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="aes_ni.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">NotUsing</PrecompiledHeader>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="apipe_client.cpp" />
+    <ClCompile Include="apipe_server.cpp" />
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="detours.cpp" />
+    <ClCompile Include="error.cpp" />
+    <ClCompile Include="file.cpp" />
+    <ClCompile Include="function.cpp" />
+    <ClCompile Include="html_colours.cpp" />
+    <ClCompile Include="lib_precompiled_header.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">lib_precompiled_header.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="mem.cpp" />
+    <ClCompile Include="pipe_client.cpp" />
+    <ClCompile Include="pipe_server.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="sha256.cpp" />
+    <ClCompile Include="stream.cpp" />
+    <ClCompile Include="virtualcontainer.cpp" />
+    <ClCompile Include="vmt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="aes_amd64.asm" />
+    <None Include="aes_x86_v1.asm" />
+    <None Include="aes_x86_v2.asm" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{27F0B4B8-1077-41DF-B8C7-97286F15B58A}</ProjectGuid>
+    <RootNamespace>SymmetryLIB</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Lua51.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Lua51.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <OutDir>$(SolutionDir)\$(ProjectName)\bin\beta\</OutDir>
+    <TargetName>symmetry</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">
+    <OutDir>$(SolutionDir)\$(ProjectName)\bin\public\</OutDir>
+    <TargetName>symmetry</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>BUILDMODE_BETA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>lib_precompiled_header.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>lib_precompiled_header.h</ForcedIncludeFiles>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ProgramDataBaseFileName>please_stop.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Public|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>BUILDMODE_PUBLIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>lib_precompiled_header.h</ForcedIncludeFiles>
+      <ProgramDataBaseFileName>please_stop.pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

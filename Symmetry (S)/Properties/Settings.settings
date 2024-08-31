@@ -1,0 +1,84 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Symmetry.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MaxConnections" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="Verbose" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ClientTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">150</Value>
+    </Setting>
+    <Setting Name="RecvTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="SendTimeout" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10000</Value>
+    </Setting>
+    <Setting Name="SvnPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/var/www/svn/files/</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">11337</Value>
+    </Setting>
+    <Setting Name="LogDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">logs</Value>
+    </Setting>
+    <Setting Name="DB_Address" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="DB_Port" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="DB_Username" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="DB_Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_Database" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_ForumDatabase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mybb</Value>
+    </Setting>
+    <Setting Name="DB_ForumPrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mybb_</Value>
+    </Setting>
+    <Setting Name="DB_SymDatabase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">symmetry</Value>
+    </Setting>
+    <Setting Name="DB_SymUserTable" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">users</Value>
+    </Setting>
+    <Setting Name="InjectorPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/var/www/svn/files/Symmetry_U/bin/</Value>
+    </Setting>
+    <Setting Name="InjectorName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">symmetry.dll</Value>
+    </Setting>
+    <Setting Name="ReplaceEnginePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/var/www/svn/files/Symmetry_R/bin/reng.exe</Value>
+    </Setting>
+    <Setting Name="InjectorUIPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/var/www/svn/files/Symmetry_UI/bin/</Value>
+    </Setting>
+    <Setting Name="InjectorUIName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">symmetry.exe</Value>
+    </Setting>
+    <Setting Name="IsLocalServer" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SvnVersionFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/var/www/svn/symmetry/db/current</Value>
+    </Setting>
+    <Setting Name="SubscriptionURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://sym.hexisoft.com/pricing/</Value>
+    </Setting>
+    <Setting Name="PingReplyDelay" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

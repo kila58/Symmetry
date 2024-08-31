@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{90fb00dc-ee6f-4390-9c36-898b03dd4ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{b0c486a1-6706-46a8-a458-b3d1d61575c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\commands">
+      <UniqueIdentifier>{f64e59eb-1006-4f22-9f05-d44e247b4f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\lua">
+      <UniqueIdentifier>{d30767c4-cdd3-408a-86bd-cd4046d4ea85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\hooks">
+      <UniqueIdentifier>{60bb5ae1-650f-4c0b-91dd-7849e6643c7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\lua">
+      <UniqueIdentifier>{043b7819-f4ac-4019-9866-0e9815754839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\io">
+      <UniqueIdentifier>{fbb8f402-cca1-4f95-b6ea-4c45e63a1346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\io">
+      <UniqueIdentifier>{dd041367-9ab3-412c-8669-ba3bed377079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\console">
+      <UniqueIdentifier>{86af0259-5184-4842-b639-4c87850b534e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\console">
+      <UniqueIdentifier>{e7739b7b-2d91-4a52-98ba-dc33c505c03c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\source">
+      <UniqueIdentifier>{8a1e7c4f-e93c-4790-b916-e2ada82039ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\source">
+      <UniqueIdentifier>{66e0c23a-e19c-4340-a651-4588fcc0f581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\game">
+      <UniqueIdentifier>{caeba39f-d21b-46c5-b7cd-3f67b8740370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{d88ac9bc-a887-43a3-8b7f-d08ff295b80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\hooks">
+      <UniqueIdentifier>{4c3a77bc-073b-43a2-9315-7d39a53df3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{6f6f869f-b152-453b-865f-b73fcb6965d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{57381b87-aedc-49e8-9946-8280ffa94f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ui">
+      <UniqueIdentifier>{97b6b524-847d-414f-9630-6e5e1fc5c8d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ui">
+      <UniqueIdentifier>{33de98df-3683-46c6-a543-28e9381f14f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symmetry.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="developer_c.cpp">
+      <Filter>Source Files\core\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="patterns.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="patterns_c.cpp">
+      <Filter>Source Files\core\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_c.cpp">
+      <Filter>Source Files\core\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="iluashared_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_manager.cpp">
+      <Filter>Source Files\core\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_library.cpp">
+      <Filter>Source Files\core\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="lua.cpp">
+      <Filter>Source Files\core\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="console.cpp">
+      <Filter>Source Files\core\io</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_hook_manager.cpp">
+      <Filter>Source Files\core\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="iluagamemode_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src_lib.cpp">
+      <Filter>Source Files\source</Filter>
+    </ClCompile>
+    <ClCompile Include="cbaseentity_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="usercommand_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_interface_manager.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="testhooks_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="communications.cpp">
+      <Filter>Source Files\core\io</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="generic_c.cpp">
+      <Filter>Source Files\core\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="exploit_c.cpp">
+      <Filter>Source Files\core\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="ipanel_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="precompiled_header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symvisuals.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="engine_vgui_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="modelrender_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src_c.cpp">
+      <Filter>Source Files\core\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="console_manager.cpp">
+      <Filter>Source Files\core\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="renderutil.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="cvarutil.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="matsystem_h.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="netvarutil.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="symcmd.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="symaimbot.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src_proxies.cpp">
+      <Filter>Source Files\core\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="basepanel.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="testframe.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="mouseutil.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="titlebar.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="panel.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="frame.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="symmetry.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="patterns.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="iluashared_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_manager.h">
+      <Filter>Header Files\core\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_library.h">
+      <Filter>Header Files\core\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_interface_manager.h">
+      <Filter>Header Files\core\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="console.h">
+      <Filter>Header Files\core\io</Filter>
+    </ClInclude>
+    <ClInclude Include="console_manager.h">
+      <Filter>Header Files\core\console</Filter>
+    </ClInclude>
+    <ClInclude Include="command_args.h">
+      <Filter>Header Files\core\console</Filter>
+    </ClInclude>
+    <ClInclude Include="concommand.h">
+      <Filter>Header Files\core\console</Filter>
+    </ClInclude>
+    <ClInclude Include="console_entry.h">
+      <Filter>Header Files\core\console</Filter>
+    </ClInclude>
+    <ClInclude Include="filea.h">
+      <Filter>Header Files\core\io</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_hook_manager.h">
+      <Filter>Header Files\core\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="iluagamemode_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_gmod.h">
+      <Filter>Header Files\core\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="src_interface.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+    <ClInclude Include="src_lua.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+    <ClInclude Include="src_generic.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+    <ClInclude Include="src_lib.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+    <ClInclude Include="symconvar.h">
+      <Filter>Header Files\core\console</Filter>
+    </ClInclude>
+    <ClInclude Include="cbasentity_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="usercommand_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="testhooks_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="communications.h">
+      <Filter>Header Files\core\io</Filter>
+    </ClInclude>
+    <ClInclude Include="src_random.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src_vars.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+    <ClInclude Include="src_surface.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+    <ClInclude Include="ipanel_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="precompiled_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="symvisuals.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="engine_vgui_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="modelrender_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src_luashared.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+    <ClInclude Include="renderutil.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="cvarutil.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="winutil.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="matsystem_h.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="netvarutil.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="symaimbot.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="symcmd.h">
+      <Filter>Header Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src_proxies.h">
+      <Filter>Header Files\core\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="basepanel.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="testframe.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="mouseutil.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="titlebar.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="panel.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="frame.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src_entity.h">
+      <Filter>Header Files\source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

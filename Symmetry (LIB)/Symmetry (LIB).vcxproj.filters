@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\lib">
+      <UniqueIdentifier>{008b69f2-94aa-4b6d-96cc-9de1f4560b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{2d28b82d-ef3f-4b7b-9ddc-ac5fc76ad9e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\detours">
+      <UniqueIdentifier>{8c74c5f5-33f2-4e70-9460-b74e4e3c387a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\io">
+      <UniqueIdentifier>{f089c229-f19d-4a04-b850-0fde3a31242e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\io">
+      <UniqueIdentifier>{e14740ad-92a4-4cfb-9b7c-61e2d889944c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\detours">
+      <UniqueIdentifier>{5a0c379c-11ed-43a1-9b35-48d5f0c0e06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\io\net">
+      <UniqueIdentifier>{ab942bfb-c7b5-4de6-846e-876ebe4057e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\io\net">
+      <UniqueIdentifier>{39e23ef0-9115-489f-9f1b-56d217962949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\io\net\netmsgs">
+      <UniqueIdentifier>{8f8324c4-fcee-42b9-b40f-8754fde673b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\3rdparty">
+      <UniqueIdentifier>{2629767b-3605-458a-81cf-c35b6015638d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rdparty">
+      <UniqueIdentifier>{06cb8698-61c7-4134-8f18-945b69ff591d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rdparty\aes">
+      <UniqueIdentifier>{a5072bdd-e57c-4178-9cfb-61e8fe75a65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\3rdparty\aes">
+      <UniqueIdentifier>{cc384d4d-7f1c-4851-8290-943d3bd51334}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="detours.h">
+      <Filter>Header Files\lib\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="vmt.h">
+      <Filter>Header Files\lib\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="file.h">
+      <Filter>Header Files\lib\io</Filter>
+    </ClInclude>
+    <ClInclude Include="function.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="mem.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="stream.h">
+      <Filter>Header Files\lib\io</Filter>
+    </ClInclude>
+    <ClInclude Include="windows_headers.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="namespaces.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="template_types.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="generic.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>Header Files\lib\io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="client.h">
+      <Filter>Header Files\lib\io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="virtualcontainer.h">
+      <Filter>Header Files\lib\io</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe_server.h">
+      <Filter>Header Files\lib\io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe_client.h">
+      <Filter>Header Files\lib\io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="netmsg_base.h">
+      <Filter>Header Files\lib\io\net\netmsgs</Filter>
+    </ClInclude>
+    <ClInclude Include="netmsg_ipc_conin.h">
+      <Filter>Header Files\lib\io\net\netmsgs</Filter>
+    </ClInclude>
+    <ClInclude Include="netmsg_ipc_print.h">
+      <Filter>Header Files\lib\io\net\netmsgs</Filter>
+    </ClInclude>
+    <ClInclude Include="netmsg_ipc_clear.h">
+      <Filter>Header Files\lib\io\net\netmsgs</Filter>
+    </ClInclude>
+    <ClInclude Include="apipe_client.h">
+      <Filter>Header Files\lib\io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="apipe_server.h">
+      <Filter>Header Files\lib\io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="error.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="net.h">
+      <Filter>Header Files\lib\io</Filter>
+    </ClInclude>
+    <ClInclude Include="netmsg_ipc_exit.h">
+      <Filter>Header Files\lib\io\net\netmsgs</Filter>
+    </ClInclude>
+    <ClInclude Include="netmsg_ipc_addcommand.h">
+      <Filter>Header Files\lib\io\net\netmsgs</Filter>
+    </ClInclude>
+    <ClInclude Include="netmsg_ipc_remcommand.h">
+      <Filter>Header Files\lib\io\net\netmsgs</Filter>
+    </ClInclude>
+    <ClInclude Include="lib_precompiled_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aes_via_ace.h">
+      <Filter>Header Files\3rdparty\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes_ni.h">
+      <Filter>Header Files\3rdparty\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes.h">
+      <Filter>Header Files\3rdparty\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aestab.h">
+      <Filter>Header Files\3rdparty\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aesopt.h">
+      <Filter>Header Files\3rdparty\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aescpp.h">
+      <Filter>Header Files\3rdparty\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="html_colours.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="netmsg_ping.h">
+      <Filter>Header Files\lib\io\net\netmsgs</Filter>
+    </ClInclude>
+    <ClInclude Include="minmax.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="linkedlist.h">
+      <Filter>Header Files\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="sha256.h">
+      <Filter>Header Files\3rdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header Files\3rdparty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="detours.cpp">
+      <Filter>Source Files\lib\detours</Filter>
+    </ClCompile>
+    <ClCompile Include="file.cpp">
+      <Filter>Source Files\lib\io</Filter>
+    </ClCompile>
+    <ClCompile Include="function.cpp">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="mem.cpp">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="stream.cpp">
+      <Filter>Source Files\lib\io</Filter>
+    </ClCompile>
+    <ClCompile Include="vmt.cpp">
+      <Filter>Source Files\lib\detours</Filter>
+    </ClCompile>
+    <ClCompile Include="client.cpp">
+      <Filter>Source Files\lib\io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>Source Files\lib\io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="virtualcontainer.cpp">
+      <Filter>Source Files\lib\io</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe_server.cpp">
+      <Filter>Source Files\lib\io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe_client.cpp">
+      <Filter>Source Files\lib\io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="sha256.cpp">
+      <Filter>Source Files\3rdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Source Files\3rdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="apipe_client.cpp">
+      <Filter>Source Files\lib\io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="apipe_server.cpp">
+      <Filter>Source Files\lib\io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="error.cpp">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib_precompiled_header.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aescrypt.c">
+      <Filter>Source Files\3rdparty\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes_ni.c">
+      <Filter>Source Files\3rdparty\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes_modes.c">
+      <Filter>Source Files\3rdparty\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aestab.c">
+      <Filter>Source Files\3rdparty\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aeskey.c">
+      <Filter>Source Files\3rdparty\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="html_colours.cpp">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="aes_x86_v2.asm">
+      <Filter>Source Files\3rdparty\aes</Filter>
+    </None>
+    <None Include="aes_x86_v1.asm">
+      <Filter>Source Files\3rdparty\aes</Filter>
+    </None>
+    <None Include="aes_amd64.asm">
+      <Filter>Source Files\3rdparty\aes</Filter>
+    </None>
+  </ItemGroup>
+</Project>
